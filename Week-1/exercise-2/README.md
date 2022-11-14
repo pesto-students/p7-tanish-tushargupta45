@@ -8,6 +8,8 @@ Hyperlinks allow users to follow a path to other pages or sites on the web. Ever
 
 # 2. High Level Components of a browser
 
+![Browser components](./images/browse.png)
+
 **The User Interface:** The user interface is the space where User interacts with the browser. It includes the address bar, back and next buttons, home button, etc.
 
 **The Browser Engine:** The browser engine works as a bridge between the User interface and the rendering engine. According to the inputs from various user interfaces, it queries and manipulates the rendering engine.
@@ -23,6 +25,8 @@ Hyperlinks allow users to follow a path to other pages or sites on the web. Ever
 **Data Persistence/Storage:** This is a persistence layer. Browsers support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem. It is a small database created on the local drive of the computer where the browser is installed. It manages user data such as cache, cookies, bookmarks and preferences.
 
 # 3. Rendering engine and its use
+
+![Browser components](./images/render.png)
 
 The networking layer will start sending the contents of the requested documents to the rendering engine in chunks.
 
@@ -43,6 +47,8 @@ Similar to HTML parsing, CSS parsing also starts by tokenizing the CSS source co
 The script processor executes Javascript code to process an event. The processor can be configured by embedding Javascript in your configuration file or by pointing the processor at external file(s).
 
 # 6. Tree construction
+
+![Browser components](./images/tree.png)
 
 While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.Each renderer represents a rectangular area usually corresponding to a node's CSS box.It includes geometric information like width, height and position.
 
