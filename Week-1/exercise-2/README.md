@@ -57,7 +57,7 @@ The Javascript code on the page is part of the HTML document, so the order in wh
 Global variables and functions defined by each script can be invoked by subsequent scripts.
 Variable calls must be declared previously, otherwise the value of the variable obtained is undefined.
 In the same script, function definitions can appear after function calls, but if they are in two separate sections of code and function calls are in the first section of code, an undefined function error will be reported.
-document.write() writes the output to the location of the script document. After the browser parses the content of the document where documemt.write(), it continues to parse the content of the document.write(). Then proceed to parse the HTML document.
+document.write() writes the output to the location of the script document. After the browser parses the content of the document where documemt.write(), it continues to parse the content of the document.write().Then proceed to parse the HTML document.
 Execution order of JS function with the same name
 
 #8. Layout
