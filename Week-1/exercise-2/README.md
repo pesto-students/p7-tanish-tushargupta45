@@ -1,4 +1,4 @@
-#1. What is the main functionality of the browser?
+# 1. What is the main functionality of the browser?
 
 The main functionality of a web browser is to render HTML, the code that is used to design web pages. When a browser loads a web page, it processes the HTML, which may contain text, links, and references to images and other items like CSS and JavaScript functions. The browser then renders these objects in the browser window after processing them.
 
@@ -6,7 +6,7 @@ When the web browser fetches data from an internet connected server, it uses a p
 
 Hyperlinks allow users to follow a path to other pages or sites on the web. Every webpage, image and video has its own unique Uniform Resource Locator (URL), which is also known as a web address. When a browser visits a server for data, the web address tells the browser where to look for each item that is described in the html, which then tells the browser where it goes on the web page.
 
-#2. High Level Components of a browser
+# 2. High Level Components of a browser
 
 **The User Interface:** The user interface is the space where User interacts with the browser. It includes the address bar, back and next buttons, home button, etc.
 
@@ -22,7 +22,7 @@ Hyperlinks allow users to follow a path to other pages or sites on the web. Ever
 
 **Data Persistence/Storage:** This is a persistence layer. Browsers support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem. It is a small database created on the local drive of the computer where the browser is installed. It manages user data such as cache, cookies, bookmarks and preferences.
 
-#3. Rendering engine and its use
+# 3. Rendering engine and its use
 
 The networking layer will start sending the contents of the requested documents to the rendering engine in chunks.
 
@@ -30,7 +30,7 @@ The rendering engine parses the chunks of HTML document and converts the element
 
 While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.
 
-#4. Parsers (HTML, CSS, etc)
+# 4. Parsers (HTML, CSS, etc)
 
 Parsing is the process of reading HTML content and constructing a DOM tree from it. Hence the process is also called DOM parsing and the program that does that is called the DOM parser.
 
@@ -38,11 +38,11 @@ HTML Parser - The job of the HTML parser is to parse the HTML markup into a pars
 
 Similar to HTML parsing, CSS parsing also starts by tokenizing the CSS source code into tokens, which are then parsed into CSS rules. Further, CSSOM is rendered.
 
-#5. Script Processors
+# 5. Script Processors
 
 The script processor executes Javascript code to process an event. The processor can be configured by embedding Javascript in your configuration file or by pointing the processor at external file(s).
 
-#6. Tree construction
+# 6. Tree construction
 
 While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.Each renderer represents a rectangular area usually corresponding to a node's CSS box.It includes geometric information like width, height and position.
 
@@ -50,7 +50,7 @@ The renderers correspond to DOM elements, but the relation is not one to one. No
 
 There are DOM elements which correspond to several visual objects. These are usually elements with complex structure that cannot be described by a single rectangle. For example, the "select" element has three renderers: one for the display area, one for the drop down list box and one for the button. Also when text is broken into multiple lines because the width is not sufficient for one line, the new lines will be added as extra renderers.
 
-#7. Order of script processing
+# 7. Order of script processing
 
 Loading order: introducing the order in which tags < script /> appear,
 The Javascript code on the page is part of the HTML document, so the order in which Javascript is loaded is the order in which the tag < script /> appears, and the external JS in the < script /> tag or introduced through src is executed in the order in which the statement appears, and the execution process is part of the document
@@ -60,13 +60,13 @@ In the same script, function definitions can appear after function calls, but if
 document.write() writes the output to the location of the script document. After the browser parses the content of the document where documemt.write(), it continues to parse the content of the document.write().Then proceed to parse the HTML document.
 Execution order of JS function with the same name
 
-#8. Layout
+# 8. Layout
 
 The first browser creates the layout of each individual Render-Tree node. The layout consists of the size of each node in pixels and where (position) it will be printed on the screen. This process is called layout since the browser is calculating the layout information of each node.
 
 This process is also called reflow or browser reflow and it can also occur when you scroll, resize the window or manipulate DOM elements. Here is a list of events that can trigger the layout/reflow of the elements.
 
-#9. Painting
+# 9. Painting
 
 In this phase, layers are created. Creating layers helps the browser efficiently perform painting operations throughout the lifecycle of a web page such as while scrolling or resizing the browser window. Having layers also helps the browser correctly draw elements in the stacking order (along the z-axis) as they were intended by the developer.
 
