@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr;
+}
+.wrapper .img-wrapper {
+  grid-row: span 2;
+  display: flex;
+  justify-content: center;
+}
+.wrapper form {
+  font-size: 13px;
+  width: 40%;
+}
+@media (max-width: 1300px) {
+  .wrapper form {
+    width: 60%;
+  }
+}
+.wrapper form div {
+  padding: 5px;
+}
+.wrapper form .input-label input {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=index.css.map */
