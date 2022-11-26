@@ -1,0 +1,61 @@
+@use "sass:math";
+
+.main {
+    position: relative;
+    top: 100px;
+    left: 300px;
+    height: 208px;
+    width: 208px;
+    div div {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        transition-duration: 1.5s;
+    }
+}
+
+.hi-text {
+    z-index: -1;
+    position: relative;
+    bottom: 180px;
+    font-size: 3rem;
+    left: 70px;
+}
+
+/* transitions of boxes defined */
+@mixin box-rotate($angle, $origin) {
+    transform: rotate($angle);
+    transform-origin: $origin;
+}
+.main:hover{
+    #top-left {
+        @include box-rotate(90deg, top left);
+    }
+    #top-right {
+        @include box-rotate(-90deg, top right);
+    }
+    #bottom-left {
+        @include box-rotate(-90deg, bottom left);
+    }
+    #bottom-right {
+        @include box-rotate(90deg, right bottom);
+    }
+}
+
+/* set background color and alignment of boxes */
+@mixin box($color, $margin) {
+  background-color: $color;
+  margin: $margin
+}
+#top-left {
+  @include box(red, 0px -2px -2px 0px);
+}
+#top-right {
+    @include box(yellow, 0px 0px -2px -2px);
+}
+#bottom-left {
+    @include box(blue, -2px -2px 0px 0px);
+}
+#bottom-right {
+    @include box(green, -2px 0px 0px -2px);
+}
