@@ -40,3 +40,11 @@ for (let i = 0; i < input.length; i++) {
   }
 }
 q.print();
+
+//enqueue
+//Time complexity: O(1)
+//Space complexity: O(1)
+
+//dequeue
+//Time complexity: O(N)
+//Space complexity: O(N)

@@ -26,3 +26,6 @@ const parenthesisChecker = (expression) => {
 
 const str = `[(])`;
 console.log(parenthesisChecker(str));
+
+//Time complexity: O(N)
+//Space complexity: O(N)

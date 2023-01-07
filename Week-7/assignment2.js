@@ -36,3 +36,6 @@ const n2 = new ListNode(4, n3);
 const n1 = new ListNode(2, n2);
 
 console.log(rotateList(n1, 3));
+
+//Time complexity: O(N)
+//Space complexity: O(1)
