@@ -1,0 +1,106 @@
+.App {
+  background-color: #EEEEEE;
+  min-height: 750px;
+
+  .header-row{
+    height: 5rem;
+    background-color: #363636;
+    color: #DDDDDD;
+
+    .header-text{
+      padding: 1rem 0px 0px 1rem;
+      margin-top: 0px;
+      font-weight: 500;
+    }
+  }
+
+  .container{
+    width: 80%;
+    background-color: #DDDDDD;
+    margin: 3rem auto 3rem auto;
+    min-height: 500px;
+    padding: 1rem 2rem 4rem 2rem;
+    
+    .container-heading{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      h1{
+        font-weight: 400;
+      }
+    }
+
+    .container-input {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+
+     input {
+      width: 30rem;
+      height: 1.5rem;
+      margin-right: 1.5rem;
+     }
+
+     .add-button {
+      height: 30px;
+      width: 85px;
+      color: white;
+      background-color: #1520A6;
+      opacity: 100%;
+      cursor: pointer;
+     }
+
+     .add-button-disabled {
+      opacity: 60%;
+     }
+    }
+
+    .item-list{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      list-style-type: none;
+      padding-left: 0;
+      :last-child{
+        border-bottom: 1px solid grey;
+      }
+
+      .todo-item{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid grey;
+        border-bottom: none !important;
+        background-color: #EEEEEE;
+        padding: 0px 2rem;
+        height: 2.5rem;
+        :last-child{
+          border-bottom: none;
+        }
+
+        .task-complete{
+          text-decoration: line-through;
+        }
+
+        .checkbox-col {
+          width: 10%;
+          margin: auto;
+        }
+
+        .task-col {
+          width: 80%;
+          margin: auto;
+        }
+        
+        .delete-col {
+          width: 10%;
+          margin: auto;
+          text-align: center;
+        }
+      }
+      
+    }
+  }
+}
+
+
