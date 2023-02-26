@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Check2Circle } from "react-bootstrap-icons";
 
@@ -81,4 +81,4 @@ const DisplayResult = ({ inputValue }) => {
   );
 };
 
-export default DisplayResult;
+export default React.memo(DisplayResult);

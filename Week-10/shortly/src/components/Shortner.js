@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Shortner = ({ setInputValue }) => {
   const [value, setValue] = useState("");
@@ -25,4 +25,4 @@ const Shortner = ({ setInputValue }) => {
   );
 };
 
-export default Shortner;
+export default React.memo(Shortner);
