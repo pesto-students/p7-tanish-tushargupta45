@@ -1,6 +1,8 @@
 import { connect } from "react-redux";
+import { actions } from "../redux/reducer";
 
 function StepCounter(props) {
+  const { dispatch } = props;
   return (
     <div>
       <p className="DisplayText">
@@ -9,8 +11,8 @@ function StepCounter(props) {
       <button
         className="Add"
         onClick={() => {
-          props.dispatch({
-            type: "INCREMENT",
+          dispatch({
+            type: actions.INCREMENT,
           });
         }}
       >
@@ -18,8 +20,8 @@ function StepCounter(props) {
       </button>
       <button
         onClick={() => {
-          props.dispatch({
-            type: "RESET",
+          dispatch({
+            type: actions.RESET,
           });
         }}
       >
